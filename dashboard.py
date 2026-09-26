@@ -1,5 +1,5 @@
 """
-MediSynth Insight — Single Page Dynamic Dashboard
+Mediscope Insight — Single Page Dynamic Dashboard
 Run:  python dashboard.py
 Open: http://127.0.0.1:8050
 """
@@ -559,7 +559,7 @@ def row(*children, cols, gap="12px", mb="12px"):
 
 # ── App ────────────────────────────────────────────────────────────────────────
 
-app = Dash(__name__, title="MediSynth Insight",
+app = Dash(__name__, title="Mediscope Insight",
            meta_tags=[{"name":"viewport","content":"width=device-width,initial-scale=1"}])
 
 app.index_string = """<!DOCTYPE html><html><head>
@@ -611,7 +611,7 @@ app.layout = html.Div([
     # ── Topbar ──────────────────────────────────────────────────────────────
     html.Div([
         html.Div([
-            html.Span("MediSynth ", style={"fontSize":"20px","fontWeight":"700","color":TEXT,"letterSpacing":"-0.3px"}),
+            html.Span("Mediscope ", style={"fontSize":"20px","fontWeight":"700","color":TEXT,"letterSpacing":"-0.3px"}),
             html.Span("Insight",    style={"fontSize":"20px","fontWeight":"700","color":TEAL,"letterSpacing":"-0.3px"}),
             html.Div("",
                      style={"fontSize":"11px","color":MUTED,"marginTop":"2px","letterSpacing":"0.2px"}),
@@ -803,7 +803,7 @@ def cb_disease_trend(period): return disease_prevalence_fig(period)
 # ── Run ────────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     print("\n  ┌─────────────────────────────────────┐")
-    print("  │  MediSynth Insight                  │")
+    print("  │  Mediscope Insight                  │")
     print("  │  → http://127.0.0.1:8050            │")
     print("  └─────────────────────────────────────┘\n")
     app.run(debug=True, host="127.0.0.1", port=8050)
